@@ -10,7 +10,7 @@
   body{
     background-color: #C0EBF9;
     min-height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
   }
@@ -27,7 +27,7 @@
     max-width: 600px;
     
   
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 20px;
   
@@ -56,6 +56,8 @@
 
     font-family: 'Poppins';
     font-weight:  500;
+
+    
     
   }
   
@@ -81,16 +83,19 @@
   
     letter-spacing: 0.2em;
     font-size: 21px;
-  
+    font-family: 'Poppins';
+    font-weight: bold;
+
     padding: 10px;
     text-transform: uppercase;
   
     border: 0;
-    font-family: 'Poppins';
-    font-weight: 700;
+   
   
     margin: 0 auto;
   }
+
+  
   
   ::placeholder {
     color: #9cad9c;
@@ -98,14 +103,16 @@
   }
   
   form div {
-    display: flex;
+   
     justify-content: column;
     gap: 10px;
     color: #467745;
   }
   
   form div input {
-    display: flex;
+
+    display: grid;
+    
     flex-direction: column;
     width: 20px;
     height: 20px;
@@ -116,5 +123,10 @@
   @media only screen and (max-width: 640px) {
     h1 {
       text-align: left;
+    }
+    input {
+      width: 100% - 40px;
+      text-align: left;
+      offset-distance: 20px;
     }
 }
